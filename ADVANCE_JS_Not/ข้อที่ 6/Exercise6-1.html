@@ -10,6 +10,22 @@
 
 <body>
     <script>
+        function Calculator() {
+            this.read = function() {
+                this.num1 = Number(prompt('Enter number : '))
+                this.num2 = Number(prompt('Enter number : '))
+            }
+            this.sum = function() {
+                return this.num1 + this.num2;
+            }
+            this.mul = function() {
+                return this.num1 * this.num2;
+            }
+        }
+        let cal = new Calculator();
+        cal.read()
+        alert(cal.sum()) //8
+        alert(cal.mul()) //15
     </script>
 </body>
 
