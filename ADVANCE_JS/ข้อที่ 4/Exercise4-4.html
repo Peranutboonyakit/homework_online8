@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4.4</title>
+</head>
+
+<body>
+    <script>
+        function sum(salary) {
+            let sumSalary = 0;
+            for (let total in salary) {
+                sumSalary += salary[total]
+            }
+            return sumSalary
+        }
+        let salary = {
+            Pepo: 100,
+            Dajong: 200,
+            Iu: 1002
+        }
+        console.log(sum(salary))
+    </script>
+</body>
+
+</html>

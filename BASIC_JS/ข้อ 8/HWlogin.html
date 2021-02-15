@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE JS BASIC 1</title>
+</head>
+<body>
+    <script>
+      let user =prompt('Who are you ?')
+      if(user==='admin'){
+        let pass = prompt('Enter password')
+        if(pass==='codecamp'){
+            alert('Welcome')
+        }else if(Boolean(pass)===true && pass!==' '){
+            alert('Wrong password')
+        }else  { alert('Cancel') }
+        
+    }   
+    else if(Boolean(user)===true && user !==''){
+        alert("I don't know you")
+    } else{alert('Cancel')}
+    
+      
+    </script>
+</body>
+</html>

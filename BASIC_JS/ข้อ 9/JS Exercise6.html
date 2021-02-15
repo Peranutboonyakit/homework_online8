@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -- ข้อที่ 1 -- //
+        /*let i = 3;
+        while(i) { alert( i--)}*/
+
+        // -- ข้อที่ 2 -- //
+        /*let i = 0;
+        while(++i<5) alert(i);*/
+        /*let i = 0;
+        while(i++<5) alert(i);*/
+
+        // -- ข้อที่ 3 -- //
+        // for(let i=0; i<5; i++) alert(i)
+        // for(let i=0; i<5; ++i) alert(i)
+
+        // -- ข้อที่ 4 -- //
+        // for(i=2; i<11; i++) alert(i)
+
+        // -- ข้อที่ 5 -- //
+        /*let i =0;
+        while(i<3){
+            alert(`number ${i}!`);
+            i++;
+        }*/
+
+        // -- ข้อที่ 6 -- //
+        let num1  = prompt('ใส่ตัวเลขระหว่าง 1-100')
+        if(num1>=1 && num1<=100){
+            let num2 = +prompt('ลองสุ่มตัวเลข')
+            for(; num2 !== num1;){
+                if( num2>num1){
+                    num2 = +prompt('ตัวเลขมีค่าสูงเกินไป');
+                }else if(num2<num1){
+                    num2 = +prompt('ตัวเลขมีค่าต่ำเกินไป');
+                }else{
+                    num2=num1;
+                }
+           }
+           alert('เก่งมาก ทายถูกต้อง !!')
+        }
+        
+    </script>
+</body>
+</html>

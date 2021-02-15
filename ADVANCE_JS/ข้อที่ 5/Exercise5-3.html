@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.3</title>
+</head>
+
+<body>
+    <script>
+        let cal = {
+            read() {
+                this.num1 = Number(prompt('Enter number1'));
+                this.num2 = Number(prompt('Enter number2'));
+            },
+            mul() {
+                return this.num1 * this.num2
+            },
+            sum() {
+                return this.num1 + this.num2
+            }
+        }
+        cal.read()
+        alert(cal.sum());
+        alert(cal.mul());
+    </script>
+</body>
+
+</html>
