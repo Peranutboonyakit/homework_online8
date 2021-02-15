@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6.2</title>
+</head>
+
+<body>
+    <script>
+        function Accumukator(startingValue) {
+            this.value = startingValue;
+            this.read = function() {
+                let num = prompt('Enter number')
+                this.value += Number(num);
+
+            }
+        }
+        let accu = new Accumukator(5);
+        accu.read()
+        alert(accu.value)
+    </script>
+</body>
+
+</html>
