@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME WORK 2</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th colspan="2">Flying Form</th>
+                <th colspan="2">To</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select >
+                        <option value="Suvarnabhumi">Suvarnabhumi</option>
+                        <option value="Donmuang">Donmuang</option>
+                    </select>
+                </td>
+                <td colspan="2">
+                    <select>
+                        <option value="Hong kong">Hong kong</option>
+                        <option value="Korea">Korea</option>
+                        <option value="Japan">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">Departing</th>
+                <th colspan="2">Returning</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="date">
+                </td>
+                <td colspan="2">
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <th>Adult</th>
+                <th>Child</th>
+                <th>Infant</th>
+                <th>Currency</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="1" max="4"></td>
+                <td><input type="number" min="1" max="4"></td>
+                <td><input type="number" min="1" max="4"></td>
+                <td >
+                    <select>
+                        <option value="THB">THB</option>
+                        <option value="JPY">JPY</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+  <div class="button">
+      <input type="submit">
+  </div>
+</body>
+<style>*{margin: 0;padding: 0;box-sizing: border-box;}
+    .container{
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 335px;
+        padding: 10px;
+        border: solid 3px gray;
+        border-radius:8px;
+    }
+    .button{
+        padding: 0;
+        margin-left: 50px;
+        background-color: salmon;
+        height: 55px;
+    }
+    .button input{
+        width: 30%;
+    }
+    table, th, td{
+        width: 320px;
+        height: 25px;
+        border-collapse: collapse;
+    }
+    th{
+        text-align: left;
+    }
+   input, select{
+       width: 80%;
+       height: 30px;
+       border-radius: 5px;
+       border:gray solid 2px;
+   }
+   .button{
+        width: 335px;
+        padding: 10px;
+   
+    }
+    
+
+</style>
+</html>

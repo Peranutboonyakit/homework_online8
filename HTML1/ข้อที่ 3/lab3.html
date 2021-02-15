@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB3</title>
+    <style>*{margin: 0;padding: 0;box-sizing: border-box;}
+    h2{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: salmon;
+            padding: 2rem;
+    }
+    
+    table,th,td{
+        margin: auto;
+        margin-top: 2rem;
+        border: black solid 1px;
+        width: 450px;
+        padding:5px;
+    }
+    </style>
+</head>
+<body>
+    <h2>LAB 2</h2>
+    <table style="width: 60%;">
+    <tr>
+        <th colspan="2"><b>Pizza Shop 2.0</b></th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" id="fname" name="fname" title="your name"></td>
+    </tr>
+    <tr>
+        <td>Pizza Topping</td>
+        <td> <input type="radio"  name="topping" value="supreme"> Supreme<br>
+            <input type="radio"  name="topping" value="Vegettarian"> Vegetarian<br>
+            <input type="radio"  name="topping" value="Hawaiian"> Hawaiian
+         </td>
+    </tr>
+    <tr>
+        <td>Pizza Sauce</td>
+        <td><select name="pizza sauce">
+            <option value="tomato">Tomato</option>
+            <option value="chili">Chili</option></select>
+          </td>
+    </tr>
+    <tr>
+        <td>Optionnal Extras</td>
+        <td>
+            <input type="checkbox" name="extra_chesse" value="1"> Extra Cheese
+            <input type="checkbox" name="Gluten_free base" value="2"> Gluten Free Base
+          </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Delivery Instrutions<br>
+            <textarea name="delivery" cols="59" rows="10"></textarea>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" value="Send my Order">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
