@@ -1,10 +1,11 @@
-CODECAMP ONELINE#8
+## CODECAMP ONELINE#8
 
-PERANUT BOONYAKIT
+## PERANUT BOONYAKIT
 
 <br><hr><br>
 
-Exercise String
+## Exercise String
+
 - เขียนฟังก์ชัน ucFirst(string) โดยทำคืนค่าเป็น string เดิม แต่ตัวแรกของ string กลายเป็นพิมพ์ใหญ่
 
 - เขียนฟังก์ชันที่ checkSpam โดยถ้าข้อความดังกล่าวมีคำว่า “xxx” หรือ “viagra” ให้คืนค่าเป็น true ถ้าไม่มีให้คืนค่าเป็น false
