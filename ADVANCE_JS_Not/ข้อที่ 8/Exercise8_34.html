@@ -11,23 +11,17 @@
 <body>
     <script>
         // ---------- Exercise 3 ---------- //
-        // function truccate(str, maxlength) {
-        //     if (str.length < maxlength) {
-        //         console.log(str);
-        //     } else {
-        //         console.log(str.slice(0, maxlength) + '...');
-        //     }
-        // }
-        // console.log(truccate("What I'd like to tell on this topic is:", 20));
-        // console.log(truccate("Hi everyone!", 20))
+        function truccate(str, maxlength) {
+            if (str.length < maxlength) {
+                console.log(str);
+            } else {
+                console.log(str.slice(0, maxlength) + '...');
+            }
+        }
+        console.log(truccate("What I'd like to tell on this topic is:", 20));
+        console.log(truccate("Hi everyone!", 20))
 
         // ---------- Exercise 4 ---------- //
-        // const currency = (str, rate) => {
-        //     let mul = str.slice(1, str.length)
-        //     return mul * rate;
-        // }
-        // alert(currency(`$120`, 30) === 3600);
-        // alert(currency(`$100`, 30) === 3600);
         function currency(str, rate) {
             let n = 0;
             for (let mul of str) {
