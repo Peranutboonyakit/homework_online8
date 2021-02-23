@@ -108,9 +108,9 @@
                     console.log(`index : ${i} have ${x}`) // index : 0 have p
                 })*/
       // --- find & findIndex --- //
-      /*let users = [{id:1,name:'p'},{id:2,name:'pp'}]
-      let user = users.find(x => x.id==1)
-      alert(user.name)*/
+      let users = [{id:1,name:'p'},{id:2,name:'pp'}]
+      let user = users.find(x => {return x.id==1})
+      alert(user.name)
     </script>
   </body>
 </html>
