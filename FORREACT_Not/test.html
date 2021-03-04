@@ -9,30 +9,55 @@
   <body>
     <script>
       // ---------- Exercise1 ---------- //
-        /*let user = {
-                name: "pepo",
-                year: 26 };
-      let { name, year: age, isAdmin = false } = user;
-      console.log(name, age, isAdmin);*/
+          //   let user = {
+          //           name: "pepo",
+          //           year: 26 };
+          // let { name, year: age, isAdmin = false } = user;
+          // console.log(name, age, isAdmin);
 
       // ---------- Exercise2 ---------- //
-            /*let salaries = {
-                'john':100, 'pete':200, Pe:999 , new:999
-            }
-            function topSalary(salaries){
-                let most = 0;
-                let whoMost = null;
-                for(let i in salaries){
-                    if(salaries[i]>most){
-                        most = salaries[i]
-                        whoMost = i
-                    }
-                }
-            return whoMost    
-            }
-            console.log(topSalary(salaries))*/
-            
-            
+            // let salaries = {
+            //     'john':100, 'pete':200, Pe:999 , new:999
+            // }
+            // function topSalary(salaries){
+            //     let most = 0;
+            //     let whoMost = null;
+            //     for(let i in salaries){
+            //         if(salaries[i]>most){
+            //             most = salaries[i]
+            //             whoMost = i
+            //         }
+            //     }
+            // return whoMost    
+            // }
+            // console.log(topSalary(salaries))
+
+      // ---------- Exercise3 ---------- //
+              // let animal = { jumps: null }
+              // let rabbit = { __proto__: animal, jumps: true };
+              // alert(rabbit.jumps); // true
+              // delete rabbit.jumps;
+              // alert(rabbit.jumps); // null
+              // delete animal.jumps;
+              // alert(rabbit.jumps) // undefined
+
+      // ---------- Exercise4 ---------- //
+              // let head = { glasses:1,};
+              // let table = { pen:3, __proto__: head};
+              // let bed = { sheet:1, pillow:2, __proto__:table };
+              // let pockets = { money:2000, __proto__:bed }
+
+      // ---------- Exercise5 ---------- //
+              // let animal = { eat(){ this.full = true; } };
+              // let rabbit = { __proto__:animal };
+              // rabbit.eat // rabbit ได้
+
+      // ---------- Exercise6 ---------- //
+              // let hamster = {
+              //   eat(food){if(!this.stomach) this.stomach=[]
+              //     this.stomach.push(food)}};
+              // let speedy = { __proto__:hamster };
+              // let lazy = { __proto__:hamster };
     </script>
   </body>
 </html>
