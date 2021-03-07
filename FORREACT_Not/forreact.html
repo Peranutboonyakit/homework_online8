@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOR REACT</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+  </head>
+  <body>
     <script>
-        //Rest of parametter
-    /*function sumAll(a,b,...arr){
-        let sum=a+b;
-            for (let ar of arr )sum +=ar;
-                return sum;}
-      sumAll(4,5,1)*/
+      // ---------- Exercise1 ---------- //
+          //   let user = {
+          //           name: "pepo",
+          //           year: 26 };
+          // let { name, year: age, isAdmin = false } = user;
+          // console.log(name, age, isAdmin);
 
-//Array Destucturing
-  /*let arr = ['pepo','peranut']
-  let [firstName,lastName] = arr
-      console.log(firstName,lastName)*/      
+      // ---------- Exercise2 ---------- //
+            // let salaries = {
+            //     'john':100, 'pete':200, Pe:999 , new:999
+            // }
+            // function topSalary(salaries){
+            //     let most = 0;
+            //     let whoMost = null;
+            //     for(let i in salaries){
+            //         if(salaries[i]>most){
+            //             most = salaries[i]
+            //             whoMost = i
+            //         }
+            //     }
+            // return whoMost    
+            // }
+            // console.log(topSalary(salaries))
 
-//Object Destucturing
-    /*let option = {title:'menu',width:200}
-    let {title,width} = option;
-        console.log(title,width)*/
+      // ---------- Exercise3 ---------- //
+              // let animal = { jumps: null }
+              // let rabbit = { __proto__: animal, jumps: true };
+              // alert(rabbit.jumps); // true
+              // delete rabbit.jumps;
+              // alert(rabbit.jumps); // null
+              // delete animal.jumps;
+              // alert(rabbit.jumps) // undefined
 
-//Nested Destructuring
-  /*let options ={
-    size:{w:100,h:200},items:['Cake','Cocacola'],extra:true}
-  let {size:{w,h},
-       items:[item1,item2],title='menu'}=options*/
+      // ---------- Exercise4 ---------- //
+              // let head = { glasses:1,};
+              // let table = { pen:3, __proto__: head};
+              // let bed = { sheet:1, pillow:2, __proto__:table };
+              // let pockets = { money:2000, __proto__:bed }
 
-//Getter(read) & Setter(config)
-  /*let user = { name:'PEPO',sur:'2P', 
-             get fullName(){ //ไม่สามารถแก้ไขได้
-                return `${this.name}${this.sur}`},
-             set fullName(value){  //เปลี่ยนได้ name sur
-               [this.name,this.sur]=value.split('');}
-  };
-  user.fullName = 'PERANUT BOONYAKIt'*/
+      // ---------- Exercise5 ---------- //
+              // let animal = { eat(){ this.full = true; } };
+              // let rabbit = { __proto__:animal };
+              // rabbit.eat // rabbit ได้
 
-//Prototypal Inheritance
-    /*let animal = {eat:true};
-    let rabbit = {jump:true,__proto__:animal};
-    rabbit.eat();*/
-   
-//Native Prototype
-    /*Function.prototype.defer = function(ms){
-      setTimeout(this,ms)
-    }
-    function f(){ console.log('hello') }
-    f.defer(3000)*/
+      // ---------- Exercise6 ---------- //
+              // let hamster = {
+              //   eat(food){if(!this.stomach) this.stomach=[]
+              //     this.stomach.push(food)}};
+              // let speedy = { __proto__:hamster };
+              // let lazy = { __proto__:hamster };
 
-    /*Function.prototype.defer = function(ms){
-      let f = this;
-      return function(a,b){ setTimeout(()=>f(a,b),ms)           }}
-    function f(a,b){ console.log(a+b) }
-    f.defer(1000)(1,5)*/
-    
-//----------Modern Prototype----------//
-    /*function Rabbit(name) {
-                this.name = name;}
-              Rabbit.prototype.sayHi = function() {
-                console.log(this.name);};
-              let rabbit = new Rabbit("Rabbit");
-    rabbit.sayHi()
-    Rabbit.prototype.sayHi()
-    object.getPrototypeOf(rabbit).satHi()*/
+      // ---------- Exercise7 ---------- //
+              // function Rabbit(){}
+              // Rabbit.prototype = { eat: true };
+              // let rabbit = new Rabbit();
+              // rabbit.eat // true
+      // ---------- Exercise8 ---------- //
+              // function Rabbit(){}
+              // Rabbit.prototype = { eat: true };
+              // let rabbit = new Rabbit();
+              // Rabbit.prototype={};
+              // rabbit.eat // true
 
-//Call Apply Bind
-    let user1 = {name:'sonteen',age:25,skill:['js'],
-                print(){ console.log(this.name) }}
-    let user2 = {name:'PEPO',age:25,skill:['No skill'],
-                print(){ console.log(this.name) }}
-    let user3 = {name:'PP',age:23}
-    user3.height = 190;
-    user3.print = user1.print
-    user1.multiply=function(time){
-      console.log(this.age*time)};
-    user1.multiply(2)
-    let mulAge = user1.multiply
-    mulAge.call(user1,3);
-    
+      // ---------- Exercise9 ---------- //
+              // let dictionary = Object.create(null,{
+              //   toString : {
+              //     value(){
+              //       return Object.keys(this).join()
+              //   }}
+              // });
+              // dictionary.apple = 'apple';
+              // dictionary.__proto__ = 'test';
+              // for(let k in dictionary){ alert(k) }
+              // alert(dictionary);
 
+      // ---------- Exercise10 ---------- //
+              // function Rabbit(name) {
+              //   this.name = name;}
+              // Rabbit.prototype.sayHi = function() {
+              //   alert(this.name);};
+              // let rabbit = new Rabbit("Rabbit");
+              // rabbit.sayHi() // rabbit
+              // Rabbit.prototype.sayHi() // undefined
+              // Object.getPrototypeOf(rabbit).sayHi() // undefined
+              // rabbit.__proto__.sayHi() // undefined
 
+      
     </script>
-</body>
+  </body>
 </html>
