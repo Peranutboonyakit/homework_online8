@@ -44,6 +44,45 @@
     /*let animal = {eat:true};
     let rabbit = {jump:true,__proto__:animal};
     rabbit.eat();*/
+   
+//Native Prototype
+    /*Function.prototype.defer = function(ms){
+      setTimeout(this,ms)
+    }
+    function f(){ console.log('hello') }
+    f.defer(3000)*/
+
+    /*Function.prototype.defer = function(ms){
+      let f = this;
+      return function(a,b){ setTimeout(()=>f(a,b),ms)           }}
+    function f(a,b){ console.log(a+b) }
+    f.defer(1000)(1,5)*/
+    
+//----------Modern Prototype----------//
+    /*function Rabbit(name) {
+                this.name = name;}
+              Rabbit.prototype.sayHi = function() {
+                console.log(this.name);};
+              let rabbit = new Rabbit("Rabbit");
+    rabbit.sayHi()
+    Rabbit.prototype.sayHi()
+    object.getPrototypeOf(rabbit).satHi()*/
+
+//Call Apply Bind
+    let user1 = {name:'sonteen',age:25,skill:['js'],
+                print(){ console.log(this.name) }}
+    let user2 = {name:'PEPO',age:25,skill:['No skill'],
+                print(){ console.log(this.name) }}
+    let user3 = {name:'PP',age:23}
+    user3.height = 190;
+    user3.print = user1.print
+    user1.multiply=function(time){
+      console.log(this.age*time)};
+    user1.multiply(2)
+    let mulAge = user1.multiply
+    mulAge.call(user1,3);
+    
+
 
     </script>
 </body>
